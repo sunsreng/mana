@@ -1,0 +1,42 @@
+<md-sidenav-container style="min-height: 850px;">
+  <md-sidenav #sidenav mode="side" opened="true" style="width: 200px;box-shadow: 0 0 20px 1px black;">
+    <div>
+      <md-list>
+        <h3 md-subheader>Folders</h3>
+        <md-list-item *ngFor="let folder of folders">
+          <md-icon md-list-icon>folder</md-icon>
+          <h4 md-line isRippleEnabled>{{folder.name}}</h4>
+        </md-list-item>
+        <md-divider></md-divider>
+        <h3 md-subheader>Notes</h3>
+        <md-list-item *ngFor="let note of notes">
+          <md-icon md-list-icon>note</md-icon>
+          <h4 md-line>{{note.name}}</h4>
+          <p md-line> {{note.updated | date}} </p>
+        </md-list-item>
+      </md-list>
+    </div>
+  </md-sidenav>
+  <div class="nav-contain">
+    Lorem ipsum dolor sit amet, pede a libero aenean phasellus, lectus metus sint ut risus, fusce
+    vel in pellentesque. Nisl rutrum etiam morbi consectetuer tempor magna, aenean nullam nunc id,
+    neque vivamus interdum sociis nulla scelerisque sem, dolor id wisi turpis magna aliquam magna.
+    Risus accumsan hac eget etiam donec sed, senectus erat mattis quam, tempor vel urna occaecat
+    cras, metus urna augue nec at. Et morbi amet dui praesent, nec eu at, ligula ipsum dui
+    sollicitudin, quis nisl massa viverra ligula, mauris fermentum orci arcu enim fringilla. Arcu
+    erat nulla in aenean lacinia ullamcorper, urna ante nam et sagittis, tristique vehicula nibh
+    ipsum vivamus, proin proin. Porta commodo nibh quis libero amet. Taciti dui, sapien
+    consectetuer.
+  </div>
+  <div class="nav-contain">
+    Lorem ipsum dolor sit amet, pede a libero aenean phasellus, lectus metus sint ut risus, fusce
+    vel in pellentesque. Nisl rutrum etiam morbi consectetuer tempor magna, aenean nullam nunc id,
+    neque vivamus interdum sociis nulla scelerisque sem, dolor id wisi turpis magna aliquam magna.
+    Risus accumsan hac eget etiam donec sed, senectus erat mattis quam, tempor vel urna occaecat
+    cras, metus urna augue nec at. Et morbi amet dui praesent, nec eu at, ligula ipsum dui
+    sollicitudin, quis nisl massa viverra ligula, mauris fermentum orci arcu enim fringilla. Arcu
+    erat nulla in aenean lacinia ullamcorper, urna ante nam et sagittis, tristique vehicula nibh
+    ipsum vivamus, proin proin. Porta commodo nibh quis libero amet. Taciti dui, sapien
+    consectetuer.
+  </div>
+</md-sidenav-container>
